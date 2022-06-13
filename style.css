@@ -1,34 +1,35 @@
 body {
   margin: 0;
-  min-width: 960px;
+  min-width: 1280px;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
   color: #222222;
   background-color: #f2f4f6;
-  background-image: url("img/hero-bg.jpg");
+  background-image: url("assets/images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .container {
-  max-width: 928px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 16px;  
 }
 
-.page-header {
+/* header */
+
+.header {
   margin: 0 0 160px;
   padding: 32px 0 32px;
 }
 
-.page-header .container,
-.page-footer .container {
-  max-width: 1408px;
+.header__container,
+.footer__container {
   text-align: right;
 }
 
-.page-header a {
+.header__link {
   margin-left: 56px;
   color: #288be6;
   text-decoration: none;
@@ -36,26 +37,27 @@ body {
   background-position: left;
 }
 
-.header-email {
+.header__link-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
+  background-image: url("assets/icons/icon-email-header.svg");
 }
 
-.header-phone {
+.header__link-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
+  background-image: url("assets/icons/icon-phone-header.svg");
 }
+
+/* hero-image */
 
 .hero-image {
   margin-bottom: 620px;
 }
 
-.hero-image .container {
-  max-width: 1408px;
+.hero-image__container {
   text-align: center;
 }
 
-.heading {
+.hero-image__heading {
   margin: 0 0 16px;
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 88px;
@@ -63,11 +65,13 @@ body {
   font-weight: 400;
 }
 
-.hero-image p {
+.hero-image__heading_description {
   margin: 0;
   font-size: 32px;
   line-height: 48px;
 }
+
+/* intro */
 
 .intro {
   margin: 0 0 120px;
@@ -82,22 +86,23 @@ body {
   text-align: center;
 }
 
-.user-image {
+.intro__image {
   margin: 0 0 32px;
   text-align: center;
 }
 
-.intro h3,
-.portfolio h3 {
+.title {
   margin: 0 0 12px;
   font-size: 28px;
   line-height: 40px;
   font-weight: 500;
 }
 
-.intro p {
+.intro__description {
   margin: 0 0 32px;
 }
+
+/* skills */
 
 .skills-list {
   margin: 0;
@@ -111,11 +116,11 @@ body {
 }
 
 .skill-html {
-  background-image: url("img/icon-html.svg");
+  background-image: url("assets/icons/icon-html.svg");
 }
 
 .skill-css {
-  background-image: url("img/icon-css.svg");
+  background-image: url("assets/icons/icon-css.svg");
 }
 
 .level {
@@ -135,30 +140,32 @@ body {
   border-radius: 6px;
 }
 
+/* portfolio */
+
 .portfolio {
   margin: 0 0 120px;
 }
 
-.projects {
+.portfolio__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.projects li {
+.portfolio__item {
   margin: 0 0 80px;
 }
 
-.project-image {
+.portfolio__image {
   margin: 0 0 24px;
   text-align: center;
 }
 
-.projects p {
+.portfolio__title_description {
   margin: 0 0 24px;
 }
 
-.button {
+.portfolio__link {
   padding: 6px 20px;
   display: inline-block;
   vertical-align: baseline;
@@ -169,13 +176,15 @@ body {
   color: #ffffff;
 }
 
-.page-footer {
+/* footer */
+
+.footer {
   padding: 40px 0;
   background-color: #00417d;
   color: #ffffff;
 }
 
-.page-footer a {
+.footer__link {
   margin-left: 56px;
   color: inherit;
   text-decoration: none;
@@ -183,12 +192,12 @@ body {
   background-position: left;
 }
 
-.footer-email {
+.footer__link-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-footer.svg");
+  background-image: url("assets/icons/icon-email-footer.svg");
 }
 
-.footer-phone {
+.footer__link-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-footer.svg");
+  background-image: url("assets/icons/icon-phone-footer.svg");
 }
