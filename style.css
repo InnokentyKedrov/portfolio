@@ -14,7 +14,7 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 16px;  
+  padding: 0 16px;
 }
 
 /* header */
@@ -35,6 +35,11 @@ body {
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
+}
+
+.header__link-github {
+  padding-left: 30px;
+  background-image: url("assets/icons/icon-github-header.svg");
 }
 
 .header__link-email {
@@ -203,6 +208,11 @@ body {
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
+}
+
+.footer__link-github {
+  padding-left: 30px;
+  background-image: url("assets/icons/icon-github-footer.svg");
 }
 
 .footer__link-email {
