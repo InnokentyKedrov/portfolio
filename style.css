@@ -55,7 +55,7 @@ body {
 /* hero-image */
 
 .hero-image {
-  margin-bottom: 620px;
+  margin-bottom: 500px;
 }
 
 .hero-image__container {
@@ -91,9 +91,8 @@ body {
   text-align: center;
 }
 
-.intro__image {
-  margin: 0 0 32px;
-  text-align: center;
+.intro__item {
+  flex-shrink: 1;
 }
 
 .title {
@@ -109,15 +108,17 @@ body {
 
 .intro__list {
   display: flex;
-  max-width: 1280px;
   flex-wrap: wrap;
   gap: 20px;
   list-style: none;
   padding: 0;
+  flex-basis: 100%;
 }
 
 .intro__item_image {
   height: 200px;
+  margin: 0 0 32px;
+  text-align: center;
 }
 
 /* skills */
@@ -177,6 +178,7 @@ body {
 .portfolio__image {
   margin: 0 0 24px;
   text-align: center;
+  max-width: 1280px;
 }
 
 .portfolio__title_description {
@@ -223,4 +225,25 @@ body {
 .footer__link-phone {
   padding-left: 25px;
   background-image: url("assets/icons/icon-phone-footer.svg");
+}
+
+@media screen and (max-width: 1312px) {
+  .container {
+    padding: 0;
+  }
+
+  .title,
+  .description,
+  .title_description,
+  .intro__item_image {
+    padding: 0 16px;
+  }
+
+  .portfolio__link {
+    margin-left: 16px;
+  }
+
+  .intro__list {
+    gap: 0;
+  }
 }
