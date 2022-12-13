@@ -115,6 +115,11 @@ body {
   flex-basis: 100%;
 }
 
+.description__wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .intro__item_image {
   height: 200px;
   margin: 0 0 32px;
