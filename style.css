@@ -1,12 +1,12 @@
 body {
   margin: 0;
   min-width: 1280px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 32px;
   color: #222222;
   background-color: #f2f4f6;
-  background-image: url("assets/images/hero-bg.jpg");
+  background-image: url('assets/images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -39,17 +39,17 @@ body {
 
 .header__link-github {
   padding-left: 30px;
-  background-image: url("assets/icons/icon-github-header.svg");
+  background-image: url('assets/icons/icon-github-header.svg');
 }
 
 .header__link-email {
   padding-left: 30px;
-  background-image: url("assets/icons/icon-email-header.svg");
+  background-image: url('assets/icons/icon-email-header.svg');
 }
 
 .header__link-phone {
   padding-left: 25px;
-  background-image: url("assets/icons/icon-phone-header.svg");
+  background-image: url('assets/icons/icon-phone-header.svg');
 }
 
 /* hero-image */
@@ -64,7 +64,7 @@ body {
 
 .hero-image__heading {
   margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
   font-size: 88px;
   line-height: 96px;
   font-weight: 400;
@@ -82,9 +82,14 @@ body {
   margin: 0 0 120px;
 }
 
+.intro__image {
+  padding: 0;
+  margin: 0;
+}
+
 .subheading {
   margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
   font-size: 64px;
   line-height: 80px;
   font-weight: 400;
@@ -140,11 +145,11 @@ body {
 }
 
 .skill-html {
-  background-image: url("assets/icons/icon-html.svg");
+  background-image: url('assets/icons/icon-html.svg');
 }
 
 .skill-css {
-  background-image: url("assets/icons/icon-css.svg");
+  background-image: url('assets/icons/icon-css.svg');
 }
 
 .level {
@@ -219,17 +224,17 @@ body {
 
 .footer__link-github {
   padding-left: 30px;
-  background-image: url("assets/icons/icon-github-footer.svg");
+  background-image: url('assets/icons/icon-github-footer.svg');
 }
 
 .footer__link-email {
   padding-left: 30px;
-  background-image: url("assets/icons/icon-email-footer.svg");
+  background-image: url('assets/icons/icon-email-footer.svg');
 }
 
 .footer__link-phone {
   padding-left: 25px;
-  background-image: url("assets/icons/icon-phone-footer.svg");
+  background-image: url('assets/icons/icon-phone-footer.svg');
 }
 
 @media screen and (max-width: 1312px) {
