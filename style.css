@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  min-width: 1280px;
+  overflow-x: hidden;
   font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -15,6 +15,22 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.subheading {
+  margin: 0 0 16px;
+  font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
 }
 
 /* header */
@@ -83,90 +99,162 @@ body {
 }
 
 .intro__image {
-  padding: 0;
-  margin: 0;
-}
-
-.subheading {
-  margin: 0 0 16px;
-  font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
-  font-size: 64px;
-  line-height: 80px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.intro__item {
-  flex-shrink: 1;
-}
-
-.title {
-  margin: 0 0 12px;
-  font-size: 28px;
-  line-height: 40px;
-  font-weight: 500;
-}
-
-.intro__description {
-  margin: 0 0 32px;
+  display: block;
+  margin: 0 0 24px;
+  margin: 0 auto;
 }
 
 .intro__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 285px);
   gap: 20px;
   list-style: none;
-  padding: 0;
-  flex-basis: 100%;
+  padding: 0 16px;
 }
 
-.description__wrapper {
+.intro__item {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
-.intro__item_image {
+.intro__item_button {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.intro__item_button-hor {
+  width: 100%;
   height: 200px;
-  margin: 0 0 32px;
-  text-align: center;
+}
+
+.intro__item_button-vert {
+  width: 50%;
+  height: 200px;
+}
+
+.intro__item_button-kyocera {
+  background-image: url('./assets/images/sertificates_preview/Kyocera-Mita_small.jpg');
+}
+
+.intro__item_button-vista {
+  background-image: url('./assets/images/sertificates_preview/Microsoft_Vista_small.jpg');
+}
+
+.intro__item_button-trassir {
+  background-image: url('./assets/images/sertificates_preview/Trassir_small.jpg');
+}
+
+.intro__item_button-ampI {
+  background-image: url('./assets/images/sertificates_preview/AMP_I_small.jpg');
+}
+
+.intro__item_button-ampII {
+  background-image: url('./assets/images/sertificates_preview/AMP_II_small.jpg');
+}
+
+.intro__item_button-ampIII {
+  background-image: url('./assets/images/sertificates_preview/AMP_III_small.jpg');
+}
+
+.intro__item_button-nicomaxM {
+  background-image: url('./assets/images/sertificates_preview/Nicomax_montage_small.jpg');
+}
+
+.intro__item_button-nicomaxP {
+  background-image: url('./assets/images/sertificates_preview/Nicomax_project_small.jpg');
+}
+
+.intro__item_button-nicomaxPE {
+  background-image: url('./assets/images/sertificates_preview/Nicomax_project_ext_small.jpg');
+}
+
+.intro__item_button-lpa {
+  background-image: url('./assets/images/sertificates_preview/LPA_small.jpg');
+}
+
+.intro__item_button-prof {
+  background-image: url('./assets/images/sertificates_preview/HTMLAcademy_small.jpg');
+}
+
+.intro__item_button-front {
+  background-image: url('./assets/images/sertificates_preview/RSSchool_frontend_small.jpg');
+}
+
+.intro__item_button-react {
+  background-image: url('./assets/images/sertificates_preview/RSSchool_react_small.jpg');
+}
+
+.intro__item_button:hover {
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 20%));
+  transform: scale(1.05);
+}
+
+.intro__link {
+  color: #288be6;
+  text-decoration: none;
 }
 
 /* skills */
 
-.skills-list {
+.skills {
+  margin: 0 0 120px;
+}
+
+.skills__list {
   margin: 0;
-  padding: 0;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style-type: none;
 }
 
-.skills-list dt {
-  padding-left: 32px;
+.skills__item {
+  width: 64px;
+  height: 64px;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
+  background-size: contain;
 }
 
-.skill-html {
+.skill__item-html {
   background-image: url('assets/icons/icon-html.svg');
 }
 
-.skill-css {
+.skill__item-css {
   background-image: url('assets/icons/icon-css.svg');
 }
 
-.level {
-  margin: 4px 0 16px;
-  padding: 0;
-  height: 14px;
-  font-size: 0;
-  background-color: #ffffff;
-  border: 1px solid #86c3fa;
-  border-radius: 8px;
+.skill__item-js {
+  background-image: url('assets/icons/javascript.svg');
 }
 
-.level div {
-  margin: 1px;
-  height: 12px;
-  background-color: #288be6;
-  border-radius: 6px;
+.skill__item-node {
+  background-image: url('assets/icons/nodejs.svg');
+}
+
+.skill__item-react {
+  background-image: url('assets/icons/react.svg');
+}
+
+.skill__item-redux {
+  background-image: url('assets/icons/redux.svg');
+}
+
+.skill__item-ts {
+  background-image: url('assets/icons/typescript.svg');
+}
+
+.skill__item-next {
+  background-image: url('assets/icons/nextjs.svg');
 }
 
 /* portfolio */
@@ -188,7 +276,7 @@ body {
 .portfolio__image {
   margin: 0 0 24px;
   text-align: center;
-  max-width: 1280px;
+  width: 100%;
 }
 
 .portfolio__title_description {
@@ -243,22 +331,26 @@ body {
   }
 
   .header__container,
-  .footer__container {
-    padding: 0 16px;
-  }
-
+  .footer__container,
   .title,
   .description,
-  .title_description,
-  .intro__item_image {
+  .title_description {
     padding: 0 16px;
   }
 
   .portfolio__link {
     margin-left: 16px;
   }
+}
 
+@media screen and (max-width: 930px) {
   .intro__list {
-    gap: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__image {
+    width: 100%;
   }
 }
