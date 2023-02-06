@@ -325,6 +325,111 @@ body {
   background-image: url('assets/icons/icon-phone-footer.svg');
 }
 
+/* modal */
+
+.lock {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.blackout {
+  display: none;
+}
+
+.blackout_active {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: rgba(41, 41, 41, 0.6);
+}
+
+.blackout_active:hover {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 50vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  background-color: transparent;
+}
+
+.modal_active {
+  display: block;
+}
+
+.modal__button {
+  position: absolute;
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  font-size: 28px;
+  padding: 10px 14px;
+  top: -52px;
+  right: -42px;
+
+  transform: rotate(45deg);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #f1cdb3;
+
+  cursor: pointer;
+}
+
+.modal__button:hover {
+  background-color: #fff;
+  border-color: #fddcc4;
+}
+
+.modal__button-hover {
+  background-color: #fff;
+  border-color: #fddcc4;
+}
+
+.modal__container {
+  width: 50vw;
+
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 9px;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.modal__image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 65vh;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 9px;
+
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
 @media screen and (max-width: 1312px) {
   .container {
     padding: 0;
@@ -341,16 +446,52 @@ body {
   .portfolio__link {
     margin-left: 16px;
   }
+
+  .modal,
+  .modal__container {
+    width: 55vw;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 110%;
+  }
 }
 
 @media screen and (max-width: 930px) {
   .intro__list {
     justify-content: center;
   }
+
+  .modal,
+  .modal__container {
+    width: 70vw;
+  }
+
+  .modal__title {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .intro__image {
     width: 100%;
+  }
+
+  .modal,
+  .modal__container {
+    width: 100vw;
+  }
+
+  .modal__content {
+    padding: 8px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__button {
+    right: 0;
   }
 }
