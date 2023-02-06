@@ -55,7 +55,7 @@ body {
 /* hero-image */
 
 .hero-image {
-  margin-bottom: 500px;
+  margin-bottom: 520px;
 }
 
 .hero-image__container {
@@ -88,7 +88,7 @@ body {
 }
 
 .subheading {
-  margin: 0 0 56px;
+  margin: 0 0 16px;
   font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
   font-size: 64px;
   line-height: 80px;
@@ -240,6 +240,11 @@ body {
 @media screen and (max-width: 1312px) {
   .container {
     padding: 0;
+  }
+
+  .header__container,
+  .footer__container {
+    padding: 0 16px;
   }
 
   .title,
