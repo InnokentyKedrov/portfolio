@@ -1,9 +1,9 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica', 'Montserrat', 'Arial', sans-serif;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 1.5;
   color: #222222;
   background-color: #f2f4f6;
   background-image: url('assets/images/hero-bg.jpg');
@@ -19,9 +19,8 @@ body {
 
 .subheading {
   margin: 0 0 16px;
-  font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
   font-size: 64px;
-  line-height: 80px;
+  line-height: 1.1;
   font-weight: 400;
   text-align: center;
 }
@@ -29,7 +28,7 @@ body {
 .title {
   margin: 0 0 12px;
   font-size: 28px;
-  line-height: 40px;
+  line-height: 1.2;
   font-weight: 500;
 }
 
@@ -54,6 +53,7 @@ body {
 }
 
 .header__link-github {
+  margin-left: 0;
   padding-left: 30px;
   background-image: url('assets/icons/icon-github-header.svg');
 }
@@ -80,9 +80,8 @@ body {
 
 .hero-image__heading {
   margin: 0 0 16px;
-  font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
   font-size: 88px;
-  line-height: 96px;
+  line-height: 1.1;
   font-weight: 400;
 }
 
@@ -270,7 +269,7 @@ body {
 }
 
 .portfolio__item {
-  margin: 0 0 80px;
+  margin: 0 0 8vw;
 }
 
 .portfolio__image {
@@ -311,6 +310,7 @@ body {
 }
 
 .footer__link-github {
+  margin-left: 0;
   padding-left: 30px;
   background-image: url('assets/icons/icon-github-footer.svg');
 }
@@ -431,8 +431,16 @@ body {
 }
 
 @media screen and (max-width: 1312px) {
+  body {
+    background-size: 100%;
+  }
+
   .container {
     padding: 0;
+  }
+
+  .header {
+    margin: 0 0 40px;
   }
 
   .header__container,
@@ -441,6 +449,22 @@ body {
   .description,
   .title_description {
     padding: 0 16px;
+  }
+
+  .hero-image {
+    margin-bottom: 15vw;
+  }
+
+  .hero-image__heading {
+    font-size: 60px;
+  }
+
+  .subheading {
+    font-size: 44px;
+  }
+
+  .title {
+    font-size: 24px;
   }
 
   .portfolio__link {
@@ -459,6 +483,34 @@ body {
 }
 
 @media screen and (max-width: 930px) {
+  .header__link-github {
+    margin-left: 0;
+  }
+
+  .intro,
+  .portfolio,
+  .skills {
+    margin-bottom: 10vw;
+  }
+
+  .hero-image {
+    margin-bottom: 15vw;
+  }
+
+  .hero-image__heading {
+    font-size: 44px;
+    margin-bottom: 8px;
+  }
+
+  .hero-image__heading_description {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .subheading {
+    font-size: 36px;
+  }
+
   .intro__list {
     justify-content: center;
   }
@@ -473,7 +525,79 @@ body {
   }
 }
 
+@media screen and (max-width: 800px) {
+  body {
+    background-size: auto 50vw;
+  }
+
+  .header,
+  .footer {
+    margin-bottom: 0;
+    padding: 16px 0;
+  }
+
+  .hero-image__heading {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .hero-image__heading_description {
+    font-size: 28px;
+  }
+
+  .subheading {
+    font-size: 32px;
+  }
+
+  .header__container,
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header__link,
+  .footer__link {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer__container {
+    align-items: center;
+  }
+
+  .footer__link-phone {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+    background-image: url('assets/images/cloud-bg.jpg');
+  }
+
+  .hero-image {
+    margin-bottom: 24px;
+  }
+
+  .hero-image__heading {
+    font-size: 32px;
+  }
+
+  .hero-image__heading_description {
+    font-size: 24px;
+  }
+
+  .subheading {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
   .intro__image {
     width: 100%;
   }
