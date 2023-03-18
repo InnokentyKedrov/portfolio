@@ -3,204 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700%7COld+Standard+TT&display=swap&subset=cyrillic"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=PT+Mono&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="./assets/icons/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio Andrey's Lavrjonov</title>
-    <script src="index.js" defer></script>
   </head>
 
   <body>
-    <div class="blackout"></div>
     <header class="header">
-      <div class="container header__container">
-        <a
-          class="header__link header__link-github"
-          href="https://github.com/InnokentyKedrov"
-          target="_blank"
-          >Github repository</a
-        >
-        <a
-          class="header__link header__link-email"
-          href="mailto:kedr_club@mail.ru"
-          >kedr_club@mail.ru</a
-        >
-        <a class="header__link header__link-phone" href="tel:+79103817245"
-          >+7 910 381 72 45</a
-        >
-      </div>
+      <div class="header__container">
+        <ul class="header__link_list">
+          <li class="header__link_item">
+            <a
+              class="header__link header__link-github"
+              href="https://github.com/InnokentyKedrov"
+              target="_blank"
+              >Github repository</a
+            >
+          </li>
+          <li class="header__link_item">
+            <a
+              class="header__link header__link-email"
+              href="mailto:kedr_club@mail.ru"
+              >kedr_club@mail.ru</a
+            >
+          </li>
+          <li class="header__link_item">
+            <a class="header__link header__link-phone" href="tel:+79103817245"
+              >+7 910 381 72 45</a
+            >
+          </li>
+        </ul>
     </header>
-
-    <section class="hero-image">
-      <div class="container hero-image__container">
-        <h1 class="hero-image__heading">Лаврёнов Андрей</h1>
-        <p class="hero-image__heading_description">Frontend developer</p>
-      </div>
-    </section>
 
     <section class="intro">
       <div class="container intro__container">
-        <h2 class="subheading">Давайте познакомимся</h2>
-        <img class="intro__image" src="assets/images/me.jpg" alt="Моё фото." />
-        <h3 class="title intro__title">Пара слов о себе</h3>
-        <p class="description">
-          В 2001 году я закончил НГУ им. Лобачевского по специальности
-          «Прикладная математика» факультета Вычислительной математики и
-          кибернетики.
-        </p>
-        <p class="description">
-          После университета занимался ремонтом оргтехники.
-        </p>
-        <ul class="intro__list">
-          <li class="intro__item">
-            <button
-              id="0"
-              class="intro__item_button intro__item_button-hor intro__item_button-kyocera"
-              type="button"
-            ></button>
-          </li>
-          <li class="intro__item">
-            <button
-              id="1"
-              class="intro__item_button intro__item_button-vert intro__item_button-vista"
-              type="button"
-            ></button>
-          </li>
-        </ul>
-        <p class="description">
-          Затем работал в должности инженера по системам связи, занимался
-          проектированием, расчётом смет и монтажом слаботочных систем: СКС,
-          СВН, ОПС, СОУЭ и СКУД.
-        </p>
-        <ul class="intro__list">
-          <li class="intro__item">
-            <button
-              id="2"
-              class="intro__item_button intro__item_button-hor intro__item_button-trassir"
-              type="button"
-            ></button>
-          </li>
-          <li class="intro__item">
-            <button
-              id="3"
-              class="intro__item_button intro__item_button-hor intro__item_button-ampI"
-              type="button"
-            ></button>
-          </li>
-          <li class="intro__item">
-            <button
-              id="4"
-              class="intro__item_button intro__item_button-hor intro__item_button-ampII"
-              type="button"
-            ></button>
-          </li>
-          <li class="intro__item">
-            <button
-              id="5"
-              class="intro__item_button intro__item_button-hor intro__item_button-ampIII"
-              type="button"
-            ></button>
-          </li>
-          <li class="intro__item">
-            <button
-              id="6"
-              class="intro__item_button intro__item_button-hor intro__item_button-nicomaxM"
-              type="button"
-            ></button>
-          </li>
-          <li class="intro__item">
-            <button
-              id="7"
-              class="intro__item_button intro__item_button-hor intro__item_button-nicomaxP"
-              type="button"
-            ></button>
-          </li>
-          <li class="intro__item">
-            <button
-              id="8"
-              class="intro__item_button intro__item_button-hor intro__item_button-nicomaxPE"
-              type="button"
-            ></button>
-          </li>
-          <li class="intro__item">
-            <button
-              id="9"
-              class="intro__item_button intro__item_button-vert intro__item_button-lpa"
-              type="button"
-            ></button>
-          </li>
-        </ul>
-        <h3 class="title intro__title">Чем хочу заниматься</h3>
-        <p class="description">
-          Мне всегда хотелось работать по специальности.
-        </p>
-        <ul class="intro__list">
-          <li class="intro__item">
-            <p class="description">
-              Я прошёл курс HTML Academy "Профессиональная вёрстка сайтов".
-            </p>
-            <button
-              id="10"
-              class="intro__item_button intro__item_button-vert intro__item_button-prof"
-              type="button"
-            ></button>
-          </li>
-          <li class="intro__item">
-            <p class="description">
-              Закончил курсы RSSchool JavaScript/Front-end
-            </p>
-            <button
-              id="11"
-              class="intro__item_button intro__item_button-hor intro__item_button-front"
-              type="button"
-            ></button>
-            <a
-              class="intro__link"
-              href="https://app.rs.school/certificate/29mry2fp"
-              target="_blank"
-              >Электронный сертификат</a
-            >
-          </li>
-          <li class="intro__item">
-            <p class="description">и RSSchool React.</p>
-            <button
-              id="12"
-              class="intro__item_button intro__item_button-hor intro__item_button-react"
-              type="button"
-            ></button>
-            <a
-              class="intro__link"
-              href="https://app.rs.school/certificate/nkph4wgq"
-              target="_blank"
-              >Электронный сертификат</a
-            >
-          </li>
-        </ul>
-      </div>
-    </section>
+        <div class="intro__skills_wrapper">
+          <h1 class="intro__title">PORTFOLIO</h1>
+          <ul class="skills__list">
+            <li class="skills__item skills__item-html"></li>
+            <li class="skills__item skills__item-css"></li>
+            <li class="skills__item skills__item-js"></li>
+            <li class="skills__item skills__item-node"></li>
+            <li class="skills__item skills__item-react"></li>
+            <li class="skills__item skills__item-redux"></li>
+            <li class="skills__item skills__item-ts"></li>
+            <li class="skills__item skills__item-next"></li>
+          </ul>
+        </div>
 
-    <section class="skills">
-      <div class="container skills__container">
-        <h2 class="subheading">Чему я обучился</h2>
-        <ul class="skills__list">
-          <li class="skills__item skill__item-html"></li>
-          <li class="skills__item skill__item-css"></li>
-          <li class="skills__item skill__item-js"></li>
-          <li class="skills__item skill__item-node"></li>
-          <li class="skills__item skill__item-react"></li>
-          <li class="skills__item skill__item-redux"></li>
-          <li class="skills__item skill__item-ts"></li>
-          <li class="skills__item skill__item-next"></li>
-        </ul>
+        <h2 class="intro__title_name">Андрей Лаврёнов / Andrey Lavrenov</h2>
+        <p class="intro__title_description">Frontend developer</p>
       </div>
     </section>
 
     <section class="portfolio">
       <div class="container portfolio__container">
-        <h2 class="subheading">Мои работы</h2>
         <ul class="portfolio__list">
           <!-- <li class="portfolio__item">
             <img
@@ -211,7 +74,7 @@
             <h3 class="title portfolio__title">
               Сайт клуба любителей туризма "Кедр"
             </h3>
-            <p class="title_description portfolio__title_description">
+            <p class="portfolio__title_description">
               Сайт для клуба "Кедр", выполняется на стеке
               React/TypeScript/Redux. В данный момент переделаны не все
               страницы. Старый сайт находится по адресу:
@@ -230,26 +93,44 @@
             >
           </li> -->
           <li class="portfolio__item">
+            <div class="portfolio__title_wrapper">
+              <h3 class="portfolio__title">Канбан-доска / Kanban board</h3>
+              <span  class="portfolio__title_marker">Работа в команде / Teamwork</span>
+            </div>
+            <h4 class="portfolio__subtitle">Project management app</h4>
+            <ul class="portfolio__description_list">
+              <li>
+                Финальный проект RSSchool React
+              </li>
+              <li>
+                Дизайн-макет / Figma /
+              </li>
+              <li>
+                Стек React / TypeScript / Redux
+              </li>
+              <li>
+                Доп. библиотеки react-hook-form, react-beautiful-dnd
+              </li>
+              <li>
+                База данных / MongoDB / асинхронные запросы
+              </li>
+              <li>
+                Командная работа / Jira /
+              </li>
+              <li>
+                Desktop first с адаптацией под мобильный телефон
+              </li>
+            </ul>
             <img
               class="portfolio__image"
               src="assets/images/pma.jpg"
               alt="Project management application"
             />
-
-            <h3 class="title portfolio__title">Project management app</h3>
-            <p class="title_description portfolio__title_description">
-              Финальный проект в RSSchool React - канбан-доска, сделанный в
-              команде. Макет придуман мной, выполнен в Figma. Использовался стек
-              React/TypeScript/Redux, работа с дополнительными библиотеками
-              react-hook-form, react-beautiful-dnd с базой данных на MongoDB c
-              использованием асинхронных запросов. Командная работа велась в
-              Jira. Desktop first с адаптацией под мобильный телефон.
-            </p>
             <a
               class="portfolio__link"
               href="https://rss-pma-fronikon.netlify.app/"
               target="_blank"
-              >Открыть страницу</a
+              >Открыть / Open →</a
             >
           </li>
           <li class="portfolio__item">
@@ -260,7 +141,7 @@
             />
 
             <h3 class="title portfolio__title">Lord of the rings</h3>
-            <p class="title_description portfolio__title_description">
+            <p class="portfolio__title_description">
               Личный учебный проект в RSSchool с применением
               React/TypeScript/Redux. Макет придуман мной. Использовался Redux
               Toolkit, Redux Thunks для асинхронных запросов. Для написания
@@ -282,7 +163,7 @@
             />
 
             <h3 class="title portfolio__title">RS Lang</h3>
-            <p class="title_description portfolio__title_description">
+            <p class="portfolio__title_description">
               Финальный проект в RSSchool JS/Frontend - программа для изучения
               английского языка с двумя играми, сделанный в команде с
               применением React/TypeScript/Redux. База слов развёрнута на
@@ -304,7 +185,7 @@
             />
 
             <h3 class="title portfolio__title">Барберная Chik-Chik</h3>
-            <p class="title_description portfolio__title_description">
+            <p class="portfolio__title_description">
               Учебный проект школы MethEd на нативном JS. С ипользыванием
               запросов к базе данных, с возможностью записаться к барберу.
               Полностью адаптирован под мобильный телефон.
@@ -324,7 +205,7 @@
             />
 
             <h3 class="title portfolio__title">Online Store</h3>
-            <p class="title_description portfolio__title_description">
+            <p class="portfolio__title_description">
               Учебный проект в RSSchool на TypeScript c применением поиска по
               базе товаров, с их сортировкой и помещением в корзину. Макет
               придуман мной. С адаптацией под мобильный телефон.
@@ -344,7 +225,7 @@
             />
 
             <h3 class="title portfolio__title">Virtual keyboard</h3>
-            <p class="title_description portfolio__title_description">
+            <p class="portfolio__title_description">
               Учебный проект в RSSchool полностью на JS.
             </p>
             <a
@@ -362,7 +243,7 @@
             />
 
             <h3 class="title portfolio__title">Shelter</h3>
-            <p class="title_description portfolio__title_description">
+            <p class="portfolio__title_description">
               Учебный проект в RSSchool на JS. С применением слайдера и
               пагинации. Desktop first с адаптацией под мобильный телефон.
             </p>
@@ -381,7 +262,7 @@
             />
 
             <h3 class="title portfolio__title">Сайт по продаже гаджетов</h3>
-            <p class="title_description portfolio__title_description">
+            <p class="portfolio__title_description">
               Учебный проект на HTML academy. Вёрстка по макету из Figma с pixel
               perfect, семантично и правильно.
             </p>
@@ -400,7 +281,7 @@
             />
 
             <h3 class="title portfolio__title">Магазин по продаже ёлок</h3>
-            <p class="title_description portfolio__title_description">
+            <p class="portfolio__title_description">
               Учебный проект школы MethEd - мой первый сайт на HTML5
             </p>
             <a
@@ -413,27 +294,5 @@
         </ul>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="container footer__container">
-        <a
-          class="footer__link footer__link-github"
-          href="https://github.com/InnokentyKedrov"
-          target="_blank"
-          >Github repository</a
-        >
-        <a
-          class="footer__link footer__link-email"
-          href="mailto:kedr_club@mail.ru"
-          >kedr_club@mail.ru</a
-        >
-        <a class="footer__link footer__link-phone" href="tel:+79103817245"
-          >+7 910 381 72 45</a
-        >
-      </div>
-    </footer>
-    <div class="modal">
-      <button class="modal__button" type="button">+</button>
-    </div>
   </body>
 </html>
