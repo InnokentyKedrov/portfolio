@@ -208,6 +208,7 @@ body {
 .portfolio__subtitle {
   margin: 0;
   padding: 0 2rem;
+  width: 60%;
 
   font-family: 'PT Mono', monospace;
   font-size: 2.5rem;
@@ -249,14 +250,16 @@ body {
 .portfolio__link {
   display: block;
   width: fit-content;
-  margin-left: auto;
-  margin-right: 2rem;
+  margin-left: 2rem;
+  padding: 2px 22px;
 
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
   text-align: right;
   text-decoration: none;
-  border-bottom: 1px solid #000;
-  color: #444;
+  color: #7a7a7a;
+
+  background-color: #d4d4d4;
 
   transition: color 0.4s;
 }
