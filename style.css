@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: 'Inter', 'Montserrat', 'Arial', sans-serif;
+  font-family: "Inter", "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -53,17 +53,17 @@ body {
 .header__link-github {
   margin-right: auto;
   padding-left: 30px;
-  background-image: url('assets/icons/icon-github-header.svg');
+  background-image: url("assets/icons/icon-github-header.svg");
 }
 
 .header__link-email {
   padding-left: 30px;
-  background-image: url('assets/icons/icon-email-header.svg');
+  background-image: url("assets/icons/icon-email-header.svg");
 }
 
 .header__link-phone {
   padding-left: 25px;
-  background-image: url('assets/icons/icon-phone-header.svg');
+  background-image: url("assets/icons/icon-phone-header.svg");
 }
 
 /* intro */
@@ -93,7 +93,7 @@ body {
 .intro__title {
   margin: 0;
 
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
   font-weight: 400;
   font-size: 8rem;
   line-height: 100%;
@@ -123,42 +123,42 @@ body {
 }
 
 .skills__item-html {
-  background-image: url('assets/icons/icon-html.svg');
+  background-image: url("assets/icons/icon-html.svg");
 }
 
 .skills__item-css {
-  background-image: url('assets/icons/icon-css.svg');
+  background-image: url("assets/icons/icon-css.svg");
 }
 
 .skills__item-js {
-  background-image: url('assets/icons/javascript.svg');
+  background-image: url("assets/icons/javascript.svg");
 }
 
 .skills__item-node {
-  background-image: url('assets/icons/nodejs.svg');
+  background-image: url("assets/icons/nodejs.svg");
 }
 
 .skills__item-react {
-  background-image: url('assets/icons/react.svg');
+  background-image: url("assets/icons/react.svg");
 }
 
 .skills__item-redux {
-  background-image: url('assets/icons/redux.svg');
+  background-image: url("assets/icons/redux.svg");
 }
 
 .skills__item-ts {
-  background-image: url('assets/icons/typescript.svg');
+  background-image: url("assets/icons/typescript.svg");
 }
 
 .skills__item-next {
-  background-image: url('assets/icons/nextjs.svg');
+  background-image: url("assets/icons/nextjs.svg");
 }
 
 .intro__title_name {
   margin: 0;
   padding-right: 4rem;
 
-  font-family: 'PT Mono';
+  font-family: "PT Mono";
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 150%;
@@ -169,7 +169,7 @@ body {
   margin: 0;
   padding-right: 4rem;
 
-  font-family: 'PT Mono';
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
@@ -207,7 +207,7 @@ body {
   padding: 0 2rem;
   width: 60%;
 
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
   font-size: 2.5rem;
   line-height: 150%;
 }
@@ -230,6 +230,10 @@ body {
   font-size: 2rem;
 
   color: #989898;
+}
+
+.portfolio__title_description {
+  padding: 0 2rem;
 }
 
 .portfolio__description_list {
